@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tien Nguyen Shop | Thời trang nam nữ</title>
+
+    <!-- Ket noi file CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <a href="#" class="logo">Tien Nguyen <span>Shop</span></a>
+
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#contact">Liên hệ</a>
+
+            <a href="#products" class="cart">
+                🛒 Giỏ hàng (<span id="cart-count">0</span>)
+            </a>
+        </nav>
+    </header>
+
+    <!-- BANNER -->
+    <section class="banner">
+        <div class="banner-content">
+            <h1>
+                PHONG CÁCH<br>
+                <span>THỜI TRANG</span><br>
+                CỦA BẠN
+            </h1>
+
+            <p>
+                Khám phá bộ sưu tập thời trang mới nhất tại
+                Tien Nguyen Shop. Mặc đẹp mỗi ngày,
+                tự tin thể hiện cá tính của riêng bạn!
+            </p>
+
+            <a href="#products" class="btn">MUA SẮM NGAY →</a>
+        </div>
+    </section>
+
+    <!-- DANH MUC -->
+    <section class="categories">
+        <h2 class="section-title">DANH MỤC SẢN PHẨM</h2>
+
+        <p class="section-desc">
+            Lựa chọn phong cách phù hợp với bạn
+        </p>
+
+        <div class="category-list">
+            <button class="category-item active" data-category="all">
+                Tất cả
+            </button>
+
+            <button class="category-item" data-category="nam">
+                Thời trang nam
+            </button>
+
+            <button class="category-item" data-category="nu">
+                Thời trang nữ
+            </button>
+
+            <button class="category-item" data-category="phukien">
+                Phụ kiện
+            </button>
+        </div>
+    </section>
+
+    <!-- SAN PHAM -->
+    <section class="products" id="products">
+        <h2 class="section-title center">
+            SẢN PHẨM NỔI BẬT
+        </h2>
+
+        <p class="section-desc center">
+            Những sản phẩm được yêu thích tại TienNguyen Shop
+        </p>
+
+        <div class="product-grid">
+
+            <!-- SAN PHAM 1 -->
+            <div class="product-card" data-category="nam">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=80"
+                        alt="Áo thun nam"
+                    >
+                    <span class="badge">-20%</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Áo Thun Basic</h3>
+                    <p>Thời trang nam | Cotton</p>
+
+                    <div class="price">
+                        159.000đ
+                        <span class="old-price">199.000đ</span>
+                    </div>
+
+                    <button class="add-cart" data-name="Áo Thun Basic">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 2 -->
+            <div class="product-card" data-category="nam">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=700&q=80"
+                        alt="Áo khoác thời trang"
+                    >
+                    <span class="badge">HOT</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Áo Khoác Thời Trang</h3>
+                    <p>Phong cách hiện đại</p>
+
+                    <div class="price">349.000đ</div>
+
+                    <button class="add-cart" data-name="Áo Khoác Thời Trang">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 3 -->
+            <div class="product-card" data-category="nu">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=700&q=80"
+                        alt="Váy nữ"
+                    >
+                    <span class="badge">NEW</span>
+                </div>
+
+                <div class="product-info">
+                    <h3>Váy Nữ Thanh Lịch</h3>
+                    <p>Thời trang nữ | Cao cấp</p>
+
+                    <div class="price">299.000đ</div>
+
+                    <button class="add-cart" data-name="Váy Nữ Thanh Lịch">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 4 -->
+            <div class="product-card" data-category="nam">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=700&q=80"
+                        alt="Quần jean"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3>Quần Jean Basic</h3>
+                    <p>Trẻ trung | Năng động</p>
+
+                    <div class="price">279.000đ</div>
+
+                    <button class="add-cart" data-name="Quần Jean Basic">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 5 -->
+            <div class="product-card" data-category="nu">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=700&q=80"
+                        alt="Set đồ nữ"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3>Set Đồ Nữ Thời Trang</h3>
+                    <p>Phong cách Hàn Quốc</p>
+
+                    <div class="price">399.000đ</div>
+
+                    <button class="add-cart" data-name="Set Đồ Nữ Thời Trang">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 6 -->
+            <div class="product-card" data-category="nam">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=700&q=80"
+                        alt="Áo sơ mi"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3>Áo Sơ Mi Nam</h3>
+                    <p>Thanh lịch | Dễ phối đồ</p>
+
+                    <div class="price">229.000đ</div>
+
+                    <button class="add-cart" data-name="Áo Sơ Mi Nam">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 7 -->
+            <div class="product-card" data-category="phukien">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=700&q=80"
+                        alt="Đồng hồ"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3>Đồng Hồ Thời Trang</h3>
+                    <p>Phụ kiện cá tính</p>
+
+                    <div class="price">450.000đ</div>
+
+                    <button class="add-cart" data-name="Đồng Hồ Thời Trang">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+            <!-- SAN PHAM 8 -->
+            <div class="product-card" data-category="phukien">
+                <div class="product-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?auto=format&fit=crop&w=700&q=80"
+                        alt="Túi xách"
+                    >
+                </div>
+
+                <div class="product-info">
+                    <h3>Túi Xách Thời Trang</h3>
+                    <p>Phong cách hiện đại</p>
+
+                    <div class="price">320.000đ</div>
+
+                    <button class="add-cart" data-name="Túi Xách Thời Trang">
+                        🛒 Thêm vào giỏ
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- GIOI THIEU -->
+    <section class="about" id="about">
+        <h2>VỀ TIEN NGUYEN SHOP</h2>
+
+        <p>
+            Tien Nguyen Shop mang đến những sản phẩm thời trang
+            trẻ trung, hiện đại và phù hợp với nhiều phong cách.
+            Chúng tôi mong muốn giúp bạn tự tin thể hiện cá tính,
+            tạo nên dấu ấn riêng và luôn nổi bật trong cuộc sống
+            hằng ngày. Cảm ơn bạn đã tin tưởng và lựa chọn
+            TienNguyen Shop!
+        </p>
+    </section>
+
+    <!-- LIEN HE -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">LIÊN HỆ VỚI CHÚNG TÔI</h2>
+
+        <p>📍 Địa chỉ: Hà Nội</p>
+        <p>📞 Hotline: 0987 654 321</p>
+        <p>📧 Email: tiennguyenshop@gmail.com</p>
+
+        <p class="contact-note">
+            Hãy liên hệ với chúng tôi để được tư vấn sản phẩm!
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>
+            © 2026 <span>Tien Nguyen Shop</span> |
+            All Rights Reserved.
+        </p>
+
+        <p class="footer-note">
+            Thời trang của bạn - Phong cách của riêng bạn
+        </p>
+    </footer>
+
+    <!-- THONG BAO -->
+    <div class="toast" id="toast"></div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        let cartCount = 0;
+
+        const cartNumber = document.getElementById("cart-count");
+        const toast = document.getElementById("toast");
+
+        // Them san pham vao gio hang
+        document.querySelectorAll(".add-cart").forEach(button => {
+            button.addEventListener("click", function() {
+                cartCount++;
+
+                cartNumber.textContent = cartCount;
+
+                const productName = this.dataset.name;
+
+                toast.textContent =
+                    "Đã thêm " + productName + " vào giỏ hàng!";
+
+                toast.style.display = "block";
+
+                clearTimeout(window.toastTimer);
+
+                window.toastTimer = setTimeout(() => {
+                    toast.style.display = "none";
+                }, 2500);
+            });
+        });
+
+        // Loc san pham theo danh muc
+        const categoryButtons =
+            document.querySelectorAll(".category-item");
+
+        const productCards =
+            document.querySelectorAll(".product-card");
+
+        categoryButtons.forEach(button => {
+            button.addEventListener("click", function() {
+                categoryButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                this.classList.add("active");
+
+                const selectedCategory = this.dataset.category;
+
+                productCards.forEach(card => {
+                    const productCategory = card.dataset.category;
+
+                    if (
+                        selectedCategory === "all" ||
+                        selectedCategory === productCategory
+                    ) {
+                        card.style.display = "";
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
+```
